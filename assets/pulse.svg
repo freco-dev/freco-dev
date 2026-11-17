@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="96" viewBox="0 0 840 96" role="img" aria-label="heartbeat">
+<style>
+text{font-family:'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace;font-size:12px}
+@keyframes mv{to{transform:translateX(-140px)}}
+.ln{animation:mv 1.6s linear infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.25}}
+.dot{animation:bl 1.6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.ln,.dot{animation:none}}
+</style>
+<defs>
+<linearGradient id="fade" x1="0" x2="1">
+<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".12" stop-color="#fff" stop-opacity="1"/>
+<stop offset=".88" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<mask id="m"><rect width="840" height="96" fill="url(#fade)"/></mask>
+<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+<path d="M20 0H0V20" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+</pattern>
+</defs>
+<rect x=".5" y=".5" width="839" height="95" rx="10" fill="#0a0a0a" stroke="#262626"/>
+<g mask="url(#m)">
+<rect x="1" y="1" width="838" height="94" fill="url(#grid)"/>
+<g class="ln"><path d="M0,60 L40,60 L52,60 L58,51 L64,69 L70,34 L77,84 L83,56 L90,60 L140,60 L180,60 L192,60 L198,51 L204,69 L210,34 L217,84 L223,56 L230,60 L280,60 L320,60 L332,60 L338,51 L344,69 L350,34 L357,84 L363,56 L370,60 L420,60 L460,60 L472,60 L478,51 L484,69 L490,34 L497,84 L503,56 L510,60 L560,60 L600,60 L612,60 L618,51 L624,69 L630,34 L637,84 L643,56 L650,60 L700,60 L740,60 L752,60 L758,51 L764,69 L770,34 L777,84 L783,56 L790,60 L840,60 L880,60 L892,60 L898,51 L904,69 L910,34 L917,84 L923,56 L930,60 L980,60 L1020,60 L1032,60 L1038,51 L1044,69 L1050,34 L1057,84 L1063,56 L1070,60 L1120,60 L1160,60 L1172,60 L1178,51 L1184,69 L1190,34 L1197,84 L1203,56 L1210,60 L1260,60" fill="none" stroke="#e6e6e6" stroke-width="1.6" stroke-linejoin="round"/></g>
+</g>
+<circle class="dot" cx="710" cy="17" r="3.5" fill="#e6e6e6"/>
+<text x="822" y="21" text-anchor="end" fill="#8a8a8a">all systems up</text>
+<text x="18" y="21" fill="#4a4a4a">$ watch -n1 heartbeat</text>
+</svg>
